@@ -13,74 +13,96 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"   
+      crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>My Projects</title>
   </head>
   <body>
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Welcome</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+    <nav class="d-flex justify-content-between">
+      <a href="/">
+        <img
+          src="/src/images/A.png"
+          alt="Logo A"
+          class="logo d-md-block hide"
+        />
+        <img
+          src="/src/images/small-logo.png"
+          alt="small logo"
+          class="logo d-block d-md-none"
+        />
+      </a>
+      <ul class="d-flex justify-content-between navb">
+        <li>
+          <a href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects.html">Projects</a>
+        <li>
+          <a href="/about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About Me</a>
+        <li class="active">
+          <a href="/">Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html" >Contact Me</a>
+        <li>
+          <a href="/contact.html">Contact Me</a>
         </li>
-       
+      </ul>
+    </nav>
+
+    <br />
+    <br />
+    <h2>Here you can see some of my projects.</h2>
+    <br />
+    <br />
+
+    <div class="row">
+      <!--presentation of projects starts here, has several rows-->
+      <div class="row space d-flex">
+        <!--first project-->
+        <div class="col-sm-6 d-start">
+          <img
+            src="/src/images/yoga.png"
+            alt="HTML and CSS project yoga app"
+            class="img-fluid rounded project-image"
+            title="yoga app project"
+          />
+          <h2 class="text-start">Yoga app</h2>
+          <h4>App made with HTML and CSS</h4>
+        </div>
+
+        <!--second project-->
+        <div class="col-sm-6 d-end">
+          <img
+            src="/src/images/weather.png"
+            alt="Java Script project weather app"
+            class="project-image img-fluid rounded"
+          />
+          <h2 class="text-start">Weather app</h2>
+          <h4>App made with HTML, CSS and JS</h4>
+        </div>
+      </div>
+
+      <!--third project-->
+      <div class="col-sm-6 d-start">
+        <img
+          src="/src/images/yogurt.png"
+          alt="HTML and CSS yogurt app"
+          class="img-fluid rounded project-image"
+          title="yogurt page project"
+        />
+        <h2 class="text-start">Yoghurt page</h2>
+        <h4>App made with HTML and CSS</h4>
+      </div>
+      <!--fourth project-->
+      <div class="col-sm-6 d-end">
+        <img
+          src="/src/images/portfolio-project.png"
+          alt="HTML and CSS, responsive portfolio page"
+          class="img-fluid rounded project-image"
+          title="portfolio project"
+        />
+        <h2 class="text-start">Portfolio page</h2>
+        <h4>App made with HTML and CSS, practicing tools for responsiveness</h4>
+      </div>
     </div>
-  </div>
-</nav>
-<br>
-<br>
-<h2>
-  Here you can see some of my projects.
-</h2>
-<br>
-<br>
-
-     <div class="row"> <!--presentation of projects starts here, has several rows-->
-          <div class="row space d-flex">
-              <!--first project-->
-              <div class="col-sm-6 d-start">
-                  <img src="/src/images/yoga.png" alt="HTML and CSS project yoga app" class="img-fluid rounded  project-image" title="yoga app project" />
-                  <h2 class="text-start">Yoga app</h2>
-                  <h4>App made with HTML and CSS</h4>
-              </div>
-
-              <!--second project-->
-              <div class="col-sm-6 d-end">
-                      <img src="/src/images/weather.png" alt="Java Script project weather app" class="project-image img-fluid rounded " />
-                  <h2 class="text-start">Weather app</h2>
-                  <h4>App made with HTML, CSS and JS</h4>
-              </div>
-          </div>
-
-             <!--third project-->
-              <div class="col-sm-6 d-start">
-                      <img src="/src/images/yogurt.png" alt="HTML and CSS yogurt app" class="img-fluid rounded project-image" title="yogurt page project" />
-                  <h2 class="text-start">Yoghurt page</h2>
-                  <h4>App made with HTML and CSS</h4>
-              </div>
-            <!--fourth project-->
-              <div class="col-sm-6 d-end">
-                      <img src="/src/images/portfolio-project.png" alt="HTML and CSS, responsive portfolio page" class="img-fluid rounded  project-image" title="portfolio project" />
-                  <h2 class="text-start">Portfolio page</h2>
-                  <h4>App made with HTML and CSS, practicing tools for responsiveness</h4>
-              </div>
-          </div>
-        
   </body>
 </html>

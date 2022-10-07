@@ -194,3 +194,20 @@ a {
   color: var(--font-color);
   text-decoration: none;
 }
+
+.logo {
+  max-height: 40px;
+}
+.navb {
+  flex-direction: row;
+  justify-content: end;
+  list-style: none;
+}
+li {
+  margin: 5px;
+}
+@media screen and (max-width: 777px) {
+  .hide {
+    display: none !important;
+  }
+}
