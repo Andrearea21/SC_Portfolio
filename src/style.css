@@ -50,6 +50,12 @@ h2 {
   color: var(--dark-tile-color);
   border-radius: 15%;
 }
+
+@media (max-width: 1200px) {
+  .project-image {
+    border: 20px solid;
+  }
+}
 h3,
 h4 {
   font-family: "Inter";
@@ -81,7 +87,7 @@ h4 {
 .contact-button {
   color: var(--font-color);
   margin-top: 10px;
-  padding: 25px;
+  padding: 10px;
   font-size: larger;
   height: fit-content;
 }
@@ -210,4 +216,18 @@ li {
   .hide {
     display: none !important;
   }
+}
+.foot {
+  margin: 100px 0 0 0;
+  padding: 50px 0 0;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-tile-colorS);
+}
+.workInquiry {
+  margin: 10px;
+}
+.socialIcon {
+  margin-top: 50px;
 }
