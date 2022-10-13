@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut Yogurt</title>
+</head>
+<style>
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 4px;
+}
+.header {
+    font-weight: bolder;
+}
+.text {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+button {
+    text-align: center;
+    border: solid #fff;
+    border-radius: 10px;
+    background-color: #C2E8D8;
+    opacity: 80%;
+    display: block;
+    box-shadow: inset;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px auto 0 auto;
+    transition: 150 ms;
+    box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+    cursor: pointer;
+     }
+button:hover {
+     color: #fff;
+     background-color: #C2E8D8;
+    opacity: 50%;
+    }
+
+.demoimg {
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    width: 400px;    
+}
+
+.projectY {
+    margin: 40px;
+    padding: 40px;
+    border: solid #fff;
+    border-radius: 10px;
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    width: 400px;
+}
+
+.list {
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.learnMore {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    line-height: 50px;
+}
+
+</style>
+<body>
+<div class="projectY">
+      <h1><span class="header">Coconut Yogurt</span></h1>
+    <h2><em>Make your own Coconut Yogurt</em></h2>
+    <img src=https://cdn.pixabay.com/photo/2018/08/26/19/18/yogurt-3633093_1280.jpg
+           alt= "Coconut yogurt in a jar"
+        width="400"
+        class="demoimg">
+        <hr>
+    <div class="text">
+        Did you know that you can make Coconut yogurt with only two easy ingredients?
+        <strong>It does not get any better!</strong> 
+        All you need coconut milk and probiotics (capsules).
+    </div>
+    <div class="text">Follow these <strong> three easy</strong> steps:</div>
+    
+    <ol class="list">
+        <li>Pour coconut milk into a clean and steralized jar or bowl. </li>
+        <li>Add the probiotics and stir well.</li>
+        <li>Cover with a clean cloth and wait for 24-48 hours. </li>
+    </ol>
+
+        <div class="text">
+             How many capsules of probiotics you need will depend on the product you are using. 
+             With our own brand probiotics you will only need one capsules per can of coconut milk.
+             We are soon expecting to have our own propiotics in stock. To be notified when they are available, sign up below:
+        </div>
+
+        <div>
+            <button>Be notified when back in stock</button>
+            </div>
+        <br>
+        <div>
+        <button class="buy">
+            👉 Buy Ingredients Here
+            </button>
+        </div>
+
+        <div class="learnMore">
+        <a     
+        href=https://www.alphafoodie.com/homemade-dairy-free-coconut-yogurt/
+        target="_blank"
+        >
+       
+        For more tips and tricks check out this blog.
+        </a>
+        </div>
+    </div>
+    <hr>
+    <p class="footer">
+    This page was built by Andrea 
+  </p>
+</body>
+<script>
+function getNotified () {
+let name = prompt ("Hi! What is your name, please?");
+let email = prompt ("Please enter your email address.");
+let notify = prompt ("How many packs are you interested in?")
+let button = document.querySelector ("button");
+
+if (notify >0) {
+    button.innerHTML = 
+    "Thank you " + name +  " for your interest. We will notify you at " + email + " as soon as the items are in stock."
+}
+else {button.innerHTML = 
+"OK. Maybe next time."}
+}
+let notifyButton = document.querySelector("button");
+notifyButton.addEventListener("click", getNotified);
+
+function buyNow() {
+    let hi = prompt ("Hi! What is your name, please?");
+    alert ("Hello " + hi + ". Welcome to our web shop!");
+    
+}
+
+let buyButton = document.querySelector(".buy");
+buyButton.addEventListener("click", buyNow)
+
+
+
+</script>
+</html>

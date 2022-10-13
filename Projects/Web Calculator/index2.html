@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Projects/Web Calculator/style.css" rel="stylesheet" />
+    <script src="/Projects/Web Calculator/script.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- display for calc -->
+      <div class="row"><input type="text" id="window" class="disp" dis /></div>
+
+      <!-- first row with buttons -->
+      <div
+        class="btn-group btn-group-lg"
+        role="group"
+        aria-label="Large button group"
+      >
+        <button
+          id="CE"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('CE')"
+        >
+          CE
+        </button>
+        <button
+          id="C"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('C')"
+        >
+          C
+        </button>
+        <button
+          id="divide"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('/')"
+        >
+          /
+        </button>
+        <button
+          id="multiply"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('*')"
+        >
+          *
+        </button>
+      </div>
+      <div
+        class="btn-group btn-group-lg"
+        role="group"
+        aria-label="Large button group"
+      >
+        <button
+          id="seven"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('7')"
+        >
+          7
+        </button>
+        <button
+          id="eight"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('8')"
+        >
+          8
+        </button>
+        <button
+          id="nine"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('9')"
+        >
+          9
+        </button>
+        <button
+          id="substract"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('-')"
+        >
+          -
+        </button>
+      </div>
+      <div
+        class="btn-group btn-group-lg"
+        role="group"
+        aria-label="Large button group"
+      >
+        <button
+          id="four"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('4')"
+        >
+          4
+        </button>
+        <button
+          id="five"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('5')"
+        >
+          5
+        </button>
+        <button
+          id="six"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('6')"
+        >
+          6
+        </button>
+        <button
+          id="sum"
+          type="button"
+          class="btn btn-outline-dark"
+          onclick="showNumber('+')"
+        >
+          +
+        </button>
+      </div>
+      <div
+        class="btn-group btn-group-lg"
+        role="group"
+        aria-label="Large button group"
+      >
+        <button
+          id="one"
+          type="button"
+          class="btn btn-outline-dark"
+          value="1"
+          onclick="showNumber('1')"
+        >
+          1
+        </button>
+        <button
+          id="two"
+          type="button"
+          class="btn btn-outline-dark"
+          value="2"
+          onclick="showNumber('2')"
+        >
+          2
+        </button>
+        <button
+          id="three"
+          type="button"
+          class="btn btn-outline-dark"
+          value="3"
+          onclick="showNumber('3')"
+        >
+          3
+        </button>
+        <button
+          id="equal"
+          type="button"
+          class="btn btn-outline-dark"
+          value="="
+          onclick="calculate()"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
