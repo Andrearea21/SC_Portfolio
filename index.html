@@ -20,30 +20,34 @@
     <title>Andrea - aspiring front-end developer</title>
   </head>
   <body>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html">Welcome</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+ <nav class="d-flex justify-content-between">
+      <a href="/">
+        <img
+          src="/src/images/A.png"
+          alt="Logo A"
+          class="logo d-md-block hide"
+        />
+        <img
+          src="/src/images/small-logo.png"
+          alt="small logo"
+          class="logo d-block d-md-none"
+        />
+      </a>
+      <ul class="d-flex justify-content-between navb">
+        <li>
+          <a href="/">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/projects.html">Projects</a>
+        <li>
+          <a href="/about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About Me</a>
+        <li class="active">
+          <a href="/projects.html">Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact.html" >Contact Me</a>
+        <li>
+          <a href="/contact.html">Contact Me</a>
         </li>
-       
-    </div>
-  </div>
-</nav>
+      </ul>
+    </nav>
 
     <div class="row hero-image">
       <!--hero image-->
@@ -83,14 +87,14 @@
           <div class="row space">
               <!--first project-->
               <div class="col-md-6">
-                  <img src="/src/images/yoga.png" alt="HTML and CSS project yoga app" class="img-fluid rounded d-start project-image" title="yoga app project" />
+                  <img src="/src/images/JS-Calculator.png" alt="HTML, CSS, JS project - calculator" class="img-fluid rounded d-start project-image" title="JS Calculator project" />
               </div>
               <div class="col-md-6 d-end">
 
-                  <h2 class="text-start">Yoga app</h2>
+                  <h2 class="text-start">JS Calculator</h2>
 
                   <div class="text-start m-1">
-                      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel eos eveniet alias temporibus deserunt veritatis minima fugiat explicabo eum </h4>
+                      <h4>An excercise in HTML, CSS and Java Script, using also a bit of Bootstrap for the buttons.  </h4>
                   </div>
 
                   <div class="row m-1">
@@ -107,14 +111,14 @@
 
                       <div class="text-start m-1">
                           <h4>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel eos eveniet alias temporibus deserunt veritatis minima fugiat explicabo eum dolore.
-                          </h4>
+                            Weather app made with Java Script, HTML and styled with CSS, using AJAX and API to connect with the weather information from openweathermap.org
+                           </h4>
                       </div>
 
 
                       <div class="row m-1">
 
-                          <a href="#" class="contact-link  w-50 rounded p-3 m-1 text-decoration-none"><h3>Launch Weather App</h3></a>
+                          <a target="_blank" href="https://world-wide-weather-app-project.netlify.app/" class="contact-link  w-50 rounded p-3 m-1 text-decoration-none"><h3>Launch Weather App</h3></a>
                       </div>
                   </div>
                   <div class="col-md-6 d-end">
