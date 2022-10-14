@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Andrea Albert - frontend developer based in Denmark, Copenhagen"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,7 +23,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Andrea - aspiring front-end developer</title>
+    <title>Andrea - aspiring frontend developer</title>
   </head>
   <body>
     <nav class="d-flex justify-content-between">
@@ -37,13 +40,13 @@
         />
       </a>
       <ul class="d-flex justify-content-between navb">
-        <li>
+        <li class="active">
           <a href="/">Home</a>
         </li>
         <li>
           <a href="/about.html">About</a>
         </li>
-        <li class="active">
+        <li>
           <a href="/projects.html">Projects</a>
         </li>
         <li>
@@ -61,7 +64,7 @@
       <!--hero text-->
       <div class="row hero">
         <h2>Welcome! I am Andrea</h2>
-        <h1>Aspiring front-end developer, based in Copenhagen Denmark</h1>
+        <h1>Aspiring frontend developer, based in Denmark</h1>
       </div>
     </div>
     <br />
@@ -141,7 +144,7 @@
         </div>
         <div class="col-md-6 d-end">
           <img
-            src="/src/images/weather.png"
+            src="/src/images/weather-app.png"
             alt="Java Script project weather app"
             class="project-image img-fluid rounded d-end"
           />
@@ -159,7 +162,7 @@
           />
         </div>
         <div class="col-md-6 d-end">
-          <h2 class="text-start">Yogurt App</h2>
+          <h2 class="text-start">Yogurt Page</h2>
 
           <div class="text-start m-1">
             <h4>
@@ -175,7 +178,7 @@
               href="/Projects/Yogurt/Yogurt_Project.html"
               class="contact-link w-50 rounded p-3 m-1 text-decoration-none"
             >
-              <h3>Launch Yogurt App</h3></a
+              <h3>Launch Yogurt Page</h3></a
             >
           </div>
         </div>
@@ -186,7 +189,7 @@
       <!-- work inquiry container start -->
       <div class="container">
         <div class="foot">
-          <div class="info-box justify-content-center mb-5 d-none d-md-flex">
+          <div class="justify-content-center mb-5 d-none d-md-flex">
             <div class="workInquiry">
               <h4>Work Inquiry</h4>
               <p class="text-muted">Let's work together</p>
@@ -200,23 +203,36 @@
               </a>
             </div>
           </div>
+          <div class="d-flex justify-content-center social-icon">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/"
+              class="d-flex justify-content-center m-1"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/Andrearea21/"
+              class="d-flex justify-content-center m-1"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center socialIcon">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/"
-          class="d-flex justify-content-center m-1"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a
-          target="_blank"
-          href="https://github.com/Andrearea21/SC_Portfolio"
-          class="d-flex justify-content-center m-1"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
+
+      <div class="footer-text">
+        <p class="text-muted d-flex justify-content-center">
+          This project is coded by Andrea Albert and
+          <a
+            target="_blank"
+            title="link to github"
+            href="https://github.com/Andrearea21/SC_Portfolio"
+          >
+            open source</a
+          >
+        </p>
       </div>
     </footer>
   </body>
