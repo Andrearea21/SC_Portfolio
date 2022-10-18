@@ -12,9 +12,6 @@ body {
   background-color: #000000;
   margin: 0 auto;
 }
-.main-column {
-  margin: 0 10%;
-}
 
 h1,
 h2 {
@@ -33,7 +30,7 @@ h2 {
 }
 .hero {
   margin: 0 auto;
-  padding-top: 50px;
+  padding: 50px 15px 0;
 }
 .hero-image {
   display: flex;
@@ -44,6 +41,9 @@ h2 {
   background-attachment: fixed;
   align-items: center;
   justify-content: center;
+}
+.hero-image img {
+  max-width: 100%;
 }
 .project-image {
   border: 40px solid;
