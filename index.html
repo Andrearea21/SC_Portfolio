@@ -26,45 +26,52 @@
     <title>Andrea - aspiring frontend developer</title>
   </head>
   <body>
-    <nav class="d-flex justify-content-between">
-      <a href="/">
-        <img src="src/images/A.png" alt="Logo A" class="logo d-md-block hide" />
+    <div class="container-fluid">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+            src="src/images/A.png"
+            class="img-fluid logo d-md-block hide"
+            alt="Logo A"
+          />
+          <img
+            src="src/images/small-logo.png"
+            alt="small logo"
+            class="img-fluid logo d-block d-md-none"
+          />
+        </a>
+        <ul class="d-flex justify-content-between navb">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-image">
+        <!--hero image-->
         <img
-          src="src/images/small-logo.png"
-          alt="small logo"
-          class="logo d-block d-md-none"
+          src="src/images/sea-and-sand.jpg"
+          class="img-fluid"
+          alt="danish sand dunes"
         />
-      </a>
-      <ul class="d-flex justify-content-between navb">
-        <li class="active">
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about.html">About</a>
-        </li>
-        <li>
-          <a href="/projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
 
-    <div class="hero-image">
-      <!--hero image-->
-      <img src="src/images/sea-and-sand.jpg" alt="danish sand dunes" />
-
-      <div class="main-column">
-        <!--hero text-->
-        <div class="hero">
-          <h2>Welcome! I am Andrea</h2>
-          <h1>Aspiring frontend developer, based in Denmark</h1>
+        <div class="main-column">
+          <!--hero text-->
+          <div class="hero">
+            <h2>Welcome! I am Andrea</h2>
+            <h1>Aspiring frontend developer, based in Denmark</h1>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
       <div class="row">
         <!--row of buttons start-->
         <div class="col-6 d-flex justify-content-sm-around">
@@ -81,9 +88,9 @@
       </div>
       <!--row of buttons end-->
 
-      <div class="row">
+      <div class="container-fluid">
         <!--presentation of projects starts here, has several rows-->
-        <div class="row space">
+        <div class="row">
           <!--first project-->
           <div class="col-md-6">
             <img
@@ -115,7 +122,7 @@
           </div>
         </div>
         <!--second project-->
-        <div class="row space">
+        <div class="row">
           <div class="col-md-6 d-start">
             <h2 class="text-start">Weather App</h2>
 
@@ -145,7 +152,7 @@
           </div>
         </div>
 
-        <div class="row space">
+        <div class="row">
           <!--third project-->
           <div class="col-md-6">
             <img
@@ -182,7 +189,7 @@
     </div>
     <footer>
       <!-- work inquiry container start -->
-      <div class="container">
+      <div class="container-fluid">
         <div class="foot">
           <div class="justify-content-center mb-5 d-none d-md-flex">
             <div class="workInquiry">

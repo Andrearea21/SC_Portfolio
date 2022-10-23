@@ -98,8 +98,8 @@ h4 {
   opacity: 50%;
 }
 
-.space {
-  margin: 50px;
+.row {
+  margin-top: 50px;
 }
 
 .navigation-links {
@@ -231,4 +231,8 @@ li {
 }
 .social-icon {
   margin-bottom: 20px;
+}
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
 }
